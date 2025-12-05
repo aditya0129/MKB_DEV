@@ -1,0 +1,85 @@
+.card {
+  /* background: linear-gradient(135deg, blue, cyan); */
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0 0 8px rgb(145, 144, 146);
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  margin: auto;
+}
+
+.card img {
+  height: 70px;
+  width: 70px;
+  border-radius: 100px;
+}
+
+.card-body h5 {
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.card-footer {
+  background: linear-gradient(-135deg, rgb(224, 5, 42), rgb(4, 4, 78));
+  color: #ffffff;
+}
+
+.card-footer p {
+  font-weight: bold;
+}
+
+.custom-modal .modal-content {
+  background-color: black;
+  color: white;
+}
+
+.custom-modal-header .btn-close {
+  filter: invert(1); /* Makes the close button white */
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000; /* Circle background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000; /* Keep above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-icon {
+  color: #fff; /* Arrow color */
+}
+
+/* Animation when clicked */
+.animate-click {
+  animation: upDown 1s ease-in-out; /* Apply the up and down effect */
+}
+
+/* Keyframes for up and down effect */
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translateY(0); /* Start at original position */
+  }
+  25% {
+    transform: translateY(-10px); /* Move up */
+  }
+  50% {
+    transform: translateY(5px); /* Move down */
+  }
+  75% {
+    transform: translateY(-5px); /* Move up again */
+  }
+}
